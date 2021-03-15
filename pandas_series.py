@@ -29,3 +29,16 @@ grades.dtype
 
 # Returns values of array
 grades.values
+
+
+# Series of strings
+hardware = pd.Series(["Hammer", "Saw", "Wrench"])
+print(hardware)
+
+# Calling string methods apply to each element
+# checks if letter a exists in string element
+print(hardware.str.contains("a"))
+
+hardware_upper = hardware.str.upper()
+
+print(hardware_upper)
