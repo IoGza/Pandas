@@ -34,4 +34,9 @@ print(temperatures)
 # Form a dictionary from the names and values in Part (4), then use it to initialize a Series.
 series_dict = {}
 
-series_dict = 
+series_dict = temperatures.to_dict()
+
+
+series = pd.Series(series_dict)
+
+print(series)
